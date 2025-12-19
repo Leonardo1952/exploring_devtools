@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'level0_page.dart';
 import 'level1_page.dart';
 import 'level2_page.dart';
 import 'level3_page.dart';
@@ -38,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
+    const Level0Page(),
     const Level1Page(),
     const Level2Page(),
     const Level3Page(),
@@ -61,6 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.exposure_zero),
+            label: 'Level 0',
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.looks_one),
             label: 'Level 1',

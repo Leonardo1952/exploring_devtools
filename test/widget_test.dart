@@ -14,7 +14,20 @@ void main() {
       // Build our app and trigger a frame.
       await tester.pumpWidget(const MyApp());
 
-      // Verify that we start at Level 1 and see the list.
+      // Verify that we start at Level 0.
+      expect(
+        find.widgetWithText(AppBar, 'Level 0 - No Rendering'),
+        findsOneWidget,
+      );
+
+      // Verify that the BottomNavigationBar is present.
+      expect(find.byType(BottomNavigationBar), findsOneWidget);
+
+      // Tap on "Level 1" icon.
+      await tester.tap(find.text('Level 1'));
+      await tester.pump();
+
+      // Verify that we are on Level 1.
       expect(find.text('Item 0'), findsOneWidget);
 
       // Verify that the BottomNavigationBar is present.
