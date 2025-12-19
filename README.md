@@ -1,10 +1,10 @@
 # Exploring DevTools
 
 A Flutter application designed to demonstrate various performance bottlenecks and how to identify them using Flutter DevTools.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/eceffaa2-bdda-4621-87e5-7d39a35829df" />
 
 ## Demo
-
-
+https://github.com/user-attachments/assets/c4cddf6d-7bf4-4047-8ded-516511ba11b1
 
 ## Levels Breakdown
 
